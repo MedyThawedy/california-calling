@@ -320,13 +320,23 @@ body main h1 {
 }
 
 .art15 {
-  background-color: black;
+  background-image: linear-gradient(45deg, #ffffff 4.55%, #000000 4.55%, #000000 51%, #ffffff 50%, #ffffff 54.55%, #000000 54.55%, #000000 100%);
+  background-size: 3265px 1563.63px;
+  /*background-color: black;*/
   color: #fff;
   display: flex;
   position: absolute;
   z-index: -1;
   flex-direction: column;
   height: 87vh;
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-160px);
+  }
 }
 .art15 .div1Art15 {
   display: flex;
@@ -336,7 +346,6 @@ body main h1 {
   transform: rotate(45deg);
   position: absolute;
   height: 100px;
-  border: 1px solid blue;
   margin-left: 47vw;
   margin-top: 21vh;
   width: 855px;
@@ -345,6 +354,13 @@ body main h1 {
   color: white;
   -webkit-text-stroke: 1.5px black;
   z-index: -100;
+  font-weight: bold;
+  color: #fbfbfb;
+  animation-name: rightToLeft;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation: rightToLeft 4.5s linear infinite; */
 }
 .art15 .div1Art15 h2 .hArt15Black {
   color: black;
@@ -400,6 +416,18 @@ body main h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 4vh;
+}
+
+@media only screen and (min-width: 1421px) {
+  .art15 {
+    height: 92vh;
+  }
+  .art15 .divBottomArt15 {
+    margin-top: 12vh;
+  }
+  .art15 .div1Art15 {
+    margin-left: 51vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
