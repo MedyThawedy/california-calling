@@ -11,7 +11,7 @@ body main h1 {
 
 .art1 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: black;
   color: #fff;
   /* The first p on the top  */
 }
@@ -59,7 +59,7 @@ body main h1 {
 }
 
 .art2 {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: black;
   color: #fff;
 }
 .art2 .firstDivArt2 {
@@ -94,7 +94,7 @@ body main h1 {
 }
 
 .art3 .div1Art3 {
-  background-image: linear-gradient(180deg, #030d01 38%, #ffffff 17.29% 100%);
+  background-image: linear-gradient(180deg, black 38%, #ffffff 17.29% 100%);
   display: flex;
   justify-content: flex-end;
 }
@@ -181,7 +181,7 @@ body main h1 {
 }
 
 .art10 .div1Art10 {
-  background-image: linear-gradient(180deg, #ffffff 17.29% 75%, #030d01 38%);
+  background-image: linear-gradient(180deg, #ffffff 17.29% 75%, black 38%);
   display: flex;
   justify-content: center;
 }
@@ -192,7 +192,7 @@ body main h1 {
 }
 
 .art11 {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: black;
   color: #fff;
 }
 .art11 .div1Art11 {
@@ -332,10 +332,10 @@ body main h1 {
 }
 @keyframes rightToLeft {
   0% {
-    transform: translateX(200px);
+    transform: translateX(300px);
   }
   100% {
-    transform: translateX(-160px);
+    transform: translateX(-100px);
   }
 }
 .art15 .div1Art15 {
@@ -427,6 +427,29 @@ body main h1 {
   }
   .art15 .div1Art15 {
     margin-left: 51vw;
+  }
+}
+@media only screen and (min-width: 1586px) {
+  .art15 {
+    background-size: 3354px 1563.63px;
+  }
+}
+@media only screen and (min-width: 1596px) {
+  .art15 {
+    background-size: 3354px 1563.63px;
+  }
+  .div1Art15 {
+    margin-top: 19vh;
+    width: 798px;
+  }
+}
+@media only screen and (min-width: 1602px) {
+  .art15 {
+    background-size: 3354px 1563.63px;
+  }
+  .div1Art15 {
+    margin-top: 20vh;
+    width: 798px;
   }
 }
 
