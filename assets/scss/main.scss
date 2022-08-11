@@ -426,6 +426,8 @@ body {
     z-index: -1;
     flex-direction: column;
     height: 87vh;
+    /* https://www.quora.com/Why-do-I-have-random-white-space-appearing-to-the-right-of-the-web-page-outside-of-body-tags */
+    overflow-x: hidden;
 
     @keyframes rightToLeft {
         0% {
