@@ -452,5 +452,17 @@ body main h1 {
     width: 990px !important;
   }
 }
+@media only screen and (min-width: 1684px) {
+  .art15 {
+    height: 92vh;
+  }
+  .art15 .divBottomArt15 {
+    margin-top: 12vh;
+  }
+  .art15 .div1Art15 {
+    margin-left: 51vw;
+    width: 1135px !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

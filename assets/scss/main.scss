@@ -592,3 +592,20 @@ body {
 
     }
 }
+
+@media only screen and (min-width: 1684px) {
+    .art15 {
+
+        height: 92vh;
+
+        .divBottomArt15 {
+            margin-top: 12vh;
+        }
+
+        .div1Art15 {
+            margin-left: 51vw;
+            width: 1135px !important;
+        }
+
+    }
+}
