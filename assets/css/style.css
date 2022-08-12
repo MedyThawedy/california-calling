@@ -325,7 +325,7 @@ body main h1 {
   position: absolute;
   z-index: -1;
   flex-direction: column;
-  height: 87vh;
+  height: 100vh;
   /* https://www.quora.com/Why-do-I-have-random-white-space-appearing-to-the-right-of-the-web-page-outside-of-body-tags */
   /* To fix the problem with white space due to the animation banner */
   overflow: hidden;
@@ -418,6 +418,51 @@ body main h1 {
   margin-top: 4vh;
 }
 
+@media only screen and (max-width: 950px) {
+  .art15 .div1Art15 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1096px) {
+  .art15 {
+    height: 108vh;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .art15 {
+    height: 118vh;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .art15 {
+    height: 128vh;
+  }
+}
+@media only screen and (max-width: 798px) {
+  .art15 {
+    height: 138vh;
+  }
+}
+@media only screen and (max-width: 698px) {
+  .art15 {
+    height: 148vh;
+  }
+}
+@media only screen and (max-width: 598px) {
+  .art15 {
+    height: 158vh;
+  }
+}
+@media only screen and (max-width: 498px) {
+  .art15 {
+    height: 168vh;
+  }
+}
+@media only screen and (max-width: 473px) {
+  .art15 {
+    height: 178vh;
+  }
+}
 @media only screen and (min-width: 1421px) {
   .art15 {
     height: 92vh;
