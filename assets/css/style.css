@@ -5,6 +5,9 @@
   font-family: WorkSans, LarishNeue;
 }
 
+body main {
+  overflow-x: hidden;
+}
 body main h1 {
   display: none;
 }
@@ -388,39 +391,55 @@ body main h1 {
   font-weight: 400;
   margin-top: 2vh;
 }
-.art15 .divLeftFooter {
+
+footer {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: WorkSans, LarishNeue;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4vh;
+}
+footer .divLeftFooter {
   margin-top: 12vh;
   margin-left: 10vh;
 }
-.art15 .divLeftFooter .secondDivLeftFooter,
-.art15 .divLeftFooter .thirdDivLeftFooter {
+footer .divLeftFooter .secondDivLeftFooter,
+footer .divLeftFooter .thirdDivLeftFooter {
   margin-top: 1vh;
 }
-.art15 .divLeftFooter img {
+footer .divLeftFooter img {
   height: 3vh;
 }
-.art15 .divRightFooter {
+footer .divRightFooter {
   z-index: 1;
   margin-top: 12vh;
   margin-right: 10vh;
   display: flex;
 }
-.art15 .divRightFooter .firstDivRightFooter img {
+footer .divRightFooter .firstDivRightFooter img {
   height: 4.5vh;
 }
-.art15 .divRightFooter .secondDivRightFooter img {
+footer .divRightFooter .secondDivRightFooter img {
   height: 2.5vh;
   margin-top: 2vh;
+  margin-left: 1vw;
 }
-.art15 .divBottomArt15 {
+footer .divFooter {
   display: flex;
   justify-content: space-between;
-  margin-top: 4vh;
+  margin-top: 76vh;
+  /* height: 20vh; */
+  background-color: black;
+  width: 100%;
+  padding-bottom: 7.5vh;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1421px) {
   .art15 .div1Art15 {
-    display: none;
+    width: 910px;
   }
 }
 @media only screen and (max-width: 1096px) {
@@ -433,34 +452,39 @@ body main h1 {
     height: 118vh;
   }
 }
+@media only screen and (max-width: 950px) {
+  .art15 .div1Art15 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 898px) {
   .art15 {
-    height: 128vh;
+    /*height: 128vh;*/
   }
 }
 @media only screen and (max-width: 798px) {
   .art15 {
-    height: 138vh;
+    /* height: 138vh; */
   }
 }
 @media only screen and (max-width: 698px) {
   .art15 {
-    height: 148vh;
+    /*height: 148vh;*/
   }
 }
 @media only screen and (max-width: 598px) {
   .art15 {
-    height: 158vh;
+    /*height: 158vh;*/
   }
 }
 @media only screen and (max-width: 498px) {
   .art15 {
-    height: 168vh;
+    /* height: 168vh;*/
   }
 }
 @media only screen and (max-width: 473px) {
   .art15 {
-    height: 178vh;
+    /*height: 178vh;*/
   }
 }
 @media only screen and (min-width: 1421px) {
