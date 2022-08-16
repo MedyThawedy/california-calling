@@ -10,6 +10,7 @@ body {
         h1 {
             display: none;
         }
+        overflow-x: hidden;
     }
 }
 
@@ -497,6 +498,19 @@ body {
         }
     }
 
+}
+
+footer {
+
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: WorkSans, LarishNeue;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+
     .divLeftFooter {
         margin-top: 12vh;
         margin-left: 10vh;
@@ -527,22 +541,27 @@ body {
             img {
                 height: 2.5vh;
                 margin-top: 2vh;
+                margin-left: 1vw;
             }
         }
     }
 
-    .divBottomArt15 {
+    .divFooter {
         display: flex;
         justify-content: space-between;
-        margin-top: 4vh;
+        margin-top: 76vh;
+        /* height: 20vh; */
+        background-color: black;
+        width: 100%;
+        padding-bottom: 7.5vh;
     }
 
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1421px) {
     .art15 {
         .div1Art15 {
-            display: none;
+            width: 910px;
         }
     }
 }
@@ -553,46 +572,53 @@ body {
     }
 }
 
-
 @media only screen and (max-width: 998px) {
     .art15 {
       height: 118vh;
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .art15 {
+        .div1Art15 {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 898px) {
     .art15 {
-      height: 128vh;
+      /*height: 128vh;*/
     }
 }
 
 @media only screen and (max-width: 798px) {
     .art15 {
-      height: 138vh;
+     /* height: 138vh; */
     }
 }
 
 @media only screen and (max-width: 698px) {
     .art15 {
-      height: 148vh;
+      /*height: 148vh;*/
     }
 }
 
 @media only screen and (max-width: 598px) {
     .art15 {
-      height: 158vh;
+      /*height: 158vh;*/
     }
 }
 
 @media only screen and (max-width: 498px) {
     .art15 {
-      height: 168vh;
+     /* height: 168vh;*/
     }
 }
 
 @media only screen and (max-width: 473px) {
     .art15 {
-      height: 178vh;
+      /*height: 178vh;*/
     }
 }
 
