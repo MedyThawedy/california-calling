@@ -3,6 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: WorkSans, LarishNeue;
+  /*https://stackoverflow.com/questions/41412143/unwanted-whitespace-created-by-css-transition-animation*/
+  overflow-x: hidden;
 }
 
 body main {
@@ -437,6 +439,7 @@ footer .divFooter {
   padding-bottom: 7.5vh;
 }
 
+/* The mojority of these media qeries were done to solve the empty space on th eright side caused by the animation of article 15 */
 @media only screen and (max-width: 1421px) {
   .art15 .div1Art15 {
     width: 910px;
@@ -455,36 +458,6 @@ footer .divFooter {
 @media only screen and (max-width: 950px) {
   .art15 .div1Art15 {
     display: none;
-  }
-}
-@media only screen and (max-width: 898px) {
-  .art15 {
-    /*height: 128vh;*/
-  }
-}
-@media only screen and (max-width: 798px) {
-  .art15 {
-    /* height: 138vh; */
-  }
-}
-@media only screen and (max-width: 698px) {
-  .art15 {
-    /*height: 148vh;*/
-  }
-}
-@media only screen and (max-width: 598px) {
-  .art15 {
-    /*height: 158vh;*/
-  }
-}
-@media only screen and (max-width: 498px) {
-  .art15 {
-    /* height: 168vh;*/
-  }
-}
-@media only screen and (max-width: 473px) {
-  .art15 {
-    /*height: 178vh;*/
   }
 }
 @media only screen and (min-width: 1421px) {
