@@ -439,7 +439,8 @@ footer .divFooter {
   padding-bottom: 7.5vh;
 }
 
-/* The mojority of these media qeries were done to solve the empty space on th eright side caused by the animation of article 15 */
+/* The mojority of these media qeries were done to solve the empty space on the right side caused by the animation of article 15 
+and to move the position of this element */
 @media only screen and (max-width: 1421px) {
   .art15 .div1Art15 {
     width: 910px;
@@ -453,11 +454,6 @@ footer .divFooter {
 @media only screen and (max-width: 998px) {
   .art15 {
     height: 118vh;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .art15 .div1Art15 {
-    display: none;
   }
 }
 @media only screen and (min-width: 1421px) {
@@ -507,5 +503,200 @@ footer .divFooter {
     width: 1135px !important;
   }
 }
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+/*
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+*/
+@media only screen and (max-width: 576px) {
+  .art1 h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  .art1 p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  .art1 .btnRsvp {
+    padding: 7px 36px;
+  }
+  .art2 .firstDivArt2 .p1Art2 {
+    font-size: 2rem;
+  }
+  .art2 .p2Art2 {
+    font-size: 0.9rem;
+  }
+  .art2 .p3Number {
+    font-size: 3rem;
+  }
+  .art2 div.rightSecondDivArt2 > img {
+    height: 30vh;
+    margin-left: 5vw;
+    margin-right: 1vw;
+  }
+  .art4 {
+    margin-top: 5vh;
+  }
+  .art5 {
+    margin-top: 24vh;
+  }
+  .art5 .div1Art5 h2 {
+    font-size: 2.2rem;
+  }
+  .art5 .div1Art5 div {
+    width: 92%;
+  }
+  .art5 .div1Art5 p {
+    font-size: 0.9rem;
+    margin-top: 2vh;
+  }
+  .art6 {
+    margin-top: 3vh;
+  }
+  .art7 {
+    margin-top: 4vh;
+  }
+  .art8 {
+    margin-top: 3vh;
+  }
+  .art9 {
+    margin-top: 3vh;
+  }
+  .art9 .imgAction1Art9 {
+    height: 19vh;
+    width: 49vw;
+  }
+  .art9 .div1Art9 {
+    flex-direction: column;
+  }
+  .art9 .pArt9 {
+    width: 75%;
+    font-size: 0.9rem;
+    margin-top: 3vh;
+  }
+  .art10 .imgAction1Art10 {
+    height: 20vh;
+  }
+  .art11 .div1Art11 {
+    flex-direction: column;
+    width: 90%;
+  }
+  .art11 .div1Art11 .leftDiv1Art11 h2 {
+    width: 80%;
+  }
+  .art11 .div1Art11 .rightDiv1Art11 {
+    width: 80%;
+  }
+  .art12 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .art12 .div1Art12 {
+    flex-direction: column;
+    width: 95%;
+  }
+  .art12 .div1Art12 .imgGoldenBear {
+    height: 65vh;
+    order: 1;
+  }
+  .art12 .div1Art12 .imgGoldenBear2 {
+    margin-top: -6vh;
+    z-index: 1;
+    order: 2;
+    height: 40vh;
+  }
+  .art12 .div1Art12 .imgCalifornication {
+    margin-top: 53vh;
+    order: 3;
+    height: 27vh;
+  }
+  .art13 {
+    padding-top: 11vh;
+  }
+  .art13 .div1Art13 {
+    flex-direction: column;
+  }
+  .art13 .div1Art13 .leftDiv1Art13 h2 {
+    width: 80%;
+  }
+  .art13 .div1Art13 .rightDiv1Art13 {
+    width: 90%;
+  }
+  .art13 .div1Art13 .rightDiv1Art13 .topPArt13 {
+    width: 100%;
+  }
+  .art14 .div1Art14 {
+    flex-direction: column;
+  }
+  .art14 .div1Art14 .imgPoppyBear {
+    height: 40vh;
+    margin-right: 0;
+    z-index: 1;
+  }
+  .art14 .div1Art14 .imgRoseBear {
+    height: 55vh;
+    margin-top: -5vh;
+  }
+  .art14 .div1Art14 {
+    width: 100%;
+  }
+  .artPlaceHolder {
+    height: 9vh;
+  }
+  .art15 {
+    height: 108vh;
+    margin-top: 3vh;
+  }
+  .art15 .div1Art15 {
+    font-size: 3rem;
+    height: 75px;
+    margin-left: 16vw;
+    margin-top: 26vh;
+    width: 855px;
+  }
+  .art15 .div2Art15 {
+    width: 72%;
+    margin-top: 23vh;
+    margin-left: 4vh;
+  }
+  .art15 .div2Art15 .btnRsvp {
+    padding: 7px 36px;
+  }
+  footer .divLeftFooter {
+    margin-top: 12vh;
+    margin-left: 4vh;
+  }
+  footer .divRightFooter {
+    margin-right: 4vh;
+  }
+  footer .divLeftFooter .secondDivLeftFooter,
+footer .divLeftFooter .thirdDivLeftFooter {
+    margin-top: 2vh;
+    font-size: 0.9rem;
+  }
+  footer .divRightFooter .firstDivRightFooter img {
+    height: 3vh;
+  }
+  footer .divRightFooter .secondDivRightFooter img {
+    height: 2vh;
+    margin-top: 1vh;
+    margin-left: 2vw;
+  }
+}
+/*
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+*/
 
 /*# sourceMappingURL=style.css.map */
