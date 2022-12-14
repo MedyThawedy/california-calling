@@ -264,10 +264,9 @@ body main h1 {
   height: 45vh;
   align-self: center;
   position: absolute;
-  margin-left: 28vw;
-  margin-top: 27vh;
+  margin-left: 61vw;
+  margin-top: 61vh;
   animation-name: rotate;
- 
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -642,7 +641,7 @@ and to move the position of this element */
     height: 40vh;
   }
   .art12 .div1Art12 .imgCalifornication {
-    margin-top: 53vh;
+    margin-top: 93vh;
     order: 3;
     height: 27vh;
   }
