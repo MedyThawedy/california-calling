@@ -7,8 +7,15 @@
   overflow-x: hidden;
 }
 
+
+
+div img{
+  object-fit: cover;
+}
+
 body main {
   overflow-x: hidden;
+display: grid;
 }
 body main h1 {
   display: none;
@@ -109,7 +116,7 @@ body main h1 {
 }
 
 .art4 {
-  position: absolute;
+  /*position: absolute;*/
 }
 .art4 .div1Art4 {
   display: flex;
@@ -121,7 +128,7 @@ body main h1 {
 }
 
 .art5 {
-  margin-top: 12vh;
+  margin-top: 5vh;
 }
 .art5 .div1Art5 {
   display: flex;
@@ -211,7 +218,7 @@ body main h1 {
 }
 .art11 .div1Art11 .leftDiv1Art11 h2 {
   font-size: 4.75rem;
-  width: 25%;
+  width: 34.82vw;
 }
 .art11 .div1Art11 .rightDiv1Art11 {
   width: 45%;
@@ -247,6 +254,7 @@ body main h1 {
 @keyframes rotate {
   from {
     transform: rotate(-360deg);
+  
   }
   to {
     transform: rotate(360deg);
@@ -259,9 +267,11 @@ body main h1 {
   margin-left: 28vw;
   margin-top: 27vh;
   animation-name: rotate;
+ 
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+
 }
 
 .pArtNr {
@@ -269,7 +279,7 @@ body main h1 {
 }
 
 .art13 {
-  padding-top: 17vh;
+  padding-top: 10vh;
 }
 .art13 .div1Art13 {
   display: flex;
@@ -282,7 +292,7 @@ body main h1 {
 }
 .art13 .div1Art13 .leftDiv1Art13 h2 {
   font-size: 4.75rem;
-  width: 25%;
+  width: 32.1vw;
 }
 .art13 .div1Art13 .rightDiv1Art13 {
   width: 45%;
@@ -290,7 +300,7 @@ body main h1 {
 .art13 .div1Art13 .rightDiv1Art13 .topPArt13 {
   font-size: 2rem;
   margin-top: 5vh;
-  width: 109%;
+  /*width: 109%;*/
 }
 .art13 .div1Art13 .rightDiv1Art13 .bottomPArt13 {
   font-family: "Roboto", sans-serif;
@@ -327,20 +337,28 @@ body main h1 {
   background-color: black;
   color: #fff;
   display: flex;
-  position: absolute;
+ /* position: absolute; */
   z-index: -1;
   flex-direction: column;
-  height: 100vh;
+  height: 65vh;
+  width: 100%;
   /* https://www.quora.com/Why-do-I-have-random-white-space-appearing-to-the-right-of-the-web-page-outside-of-body-tags */
   /* To fix the problem with white space due to the animation banner */
   overflow: hidden;
 }
 @keyframes rightToLeft {
+  /*
   0% {
     transform: translateX(300px);
   }
   100% {
     transform: translateX(-100px);
+  }*/
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(20%);
   }
 }
 .art15 .div1Art15 {
@@ -356,22 +374,25 @@ body main h1 {
   width: 855px;
 }
 .art15 .div1Art15 h2 {
+  overflow-y: hidden;
   color: white;
   -webkit-text-stroke: 1.5px black;
   z-index: -100;
   font-weight: bold;
   color: #fbfbfb;
   animation-name: rightToLeft;
+
   animation-duration: 4.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  /* animation: rightToLeft 4.5s linear infinite; */
+ /* animation: rotatingCircle 10s infinite linear;*/
+  animation: rightToLeft 3s linear infinite alternate;
 }
 .art15 .div1Art15 h2 .hArt15Black {
   color: black;
 }
 .art15 .div2Art15 {
-  width: 28%;
+  width: 40vw;
   margin-top: 15vh;
   margin-left: 10vh;
 }
@@ -391,8 +412,20 @@ body main h1 {
   border: 1px solid #fff;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 2vh;
+  margin-top: 2vh;  
+  cursor: pointer;
 }
+
+.art15 .div2Art15 .btnRsvp:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.btnRsvp:hover{
+  background-color: #fff;
+  color: black;
+}
+
 
 footer {
   color: #fff;
@@ -402,7 +435,7 @@ footer {
   font-family: WorkSans, LarishNeue;
   display: flex;
   justify-content: space-between;
-  margin-top: 4vh;
+  /*margin-top: 4vh;*/
 }
 footer .divLeftFooter {
   margin-top: 12vh;
@@ -432,11 +465,12 @@ footer .divRightFooter .secondDivRightFooter img {
 footer .divFooter {
   display: flex;
   justify-content: space-between;
-  margin-top: 76vh;
+  /*margin-top: 76vh; */
   /* height: 20vh; */
   background-color: black;
   width: 100%;
-  padding-bottom: 7.5vh;
+  padding-bottom: 5.5vh;
+    z-index: -100;
 }
 
 /* The mojority of these media qeries were done to solve the empty space on the right side caused by the animation of article 15 
@@ -458,7 +492,7 @@ and to move the position of this element */
 }
 @media only screen and (min-width: 1421px) {
   .art15 {
-    height: 92vh;
+    /*height: 92vh;*/
   }
   .art15 .divBottomArt15 {
     margin-top: 12vh;
@@ -469,7 +503,7 @@ and to move the position of this element */
 }
 @media only screen and (min-width: 1448px) {
   .art15 {
-    height: 92vh;
+   /* height: 92vh;*/
   }
   .art15 .divBottomArt15 {
     margin-top: 12vh;
@@ -516,7 +550,7 @@ and to move the position of this element */
   .art1 p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
   .art1 .btnRsvp {
     padding: 7px 36px;
@@ -539,7 +573,7 @@ and to move the position of this element */
     margin-top: 5vh;
   }
   .art5 {
-    margin-top: 24vh;
+    margin-top: 10vh;
   }
   .art5 .div1Art5 h2 {
     font-size: 2.2rem;
@@ -646,8 +680,8 @@ and to move the position of this element */
     height: 9vh;
   }
   .art15 {
-    height: 108vh;
-    margin-top: 3vh;
+    height: 80vh;
+   /* margin-top: 3vh;*/
   }
   .art15 .div1Art15 {
     font-size: 3rem;
